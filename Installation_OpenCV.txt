@@ -1,10 +1,20 @@
 1. Install anaconda with python3.6 in ubuntu
 
 2. To add path after installing anaconda3 in Ubuntu16.04 :
-export PATH= ~/saurabh/anaconda3/bin:$PATH
+	-Open Terminal and run gedit ~/.bashrc 
+	-add the below line at the end of the bashrc file
+		export PATH=/home/saurabh/anaconda3/bin:$PATH
+	-run below command to reload the bashrc
+		source ~/.bashrc
 
-3. To check if path got added:
-echo $PATH
+	-Open Terminal and run gedit ~/.profile 
+	-add the below line at the end of the bashrc file
+		export PATH=/home/saurabh/anaconda3/bin:$PATH
+	-run below command to reload the profile
+		source ~/.profile
+
+3. To check if path got added, Open a new terminal:
+	-echo $PATH
 
 4. Linux: To create virtual environment on ubuntu, launch terminal and navigate to the folder containing yml file and 
     conda env create -f virtual_platform_limux.yml
@@ -13,3 +23,14 @@ echo $PATH
 
 5. To delete virtual environment:
 	conda env remove -n virtual_platform
+
+6. To run any code
+	-Launch terminal and run "source activate virtual_platform"
+	-spyder
+
+
+To enable webcam in virtual box:
+________________________________
+
+1. Download VirtualBox 5.2.6 platform packages and also download VirtualBox 5.2.6 Oracle VM VirtualBox Extension Pack and install both of them.
+2. Run the VirtualBox and in the top menu "Devices" there should be a new submenu "Webcams". Enable your webcam from there and its auto-installation will start and after that webcam will be avilable.
