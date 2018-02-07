@@ -17,9 +17,10 @@
 	-echo $PATH
 
 4. Linux: To create virtual environment on ubuntu, launch terminal and navigate to the folder containing yml file and 
-    conda env create -f virtual_platform_limux.yml
+    conda env create -f virtual_platform_linux.yml
+    conda update --all
 
-   Windows: To create virtual environment on ubuntu, launch anaconda prompt and run the above command.
+   Windows: To create virtual environment on ubuntu, launch anaconda prompt and run the above command for windows yml file.
 
 5. To delete virtual environment:
 	conda env remove -n virtual_platform
